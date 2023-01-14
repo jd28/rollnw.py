@@ -1,11 +1,11 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![ci](https://github.com/jd28/rollnw/actions/workflows/ci.yml/badge.svg)](https://github.com/jd28/rollnw/actions?query=workflow%3Aci)
+[![ci](https://github.com/jd28/rollnw/actions/workflows/ci.yml/badge.svg)](https://github.com/jd28/rollnw.py/actions?query=workflow%3Aci)
 [![PyPI version](https://badge.fury.io/py/rollnw.svg)](https://badge.fury.io/py/rollnw)
 [![Documentation Status](https://readthedocs.org/projects/rollnw/badge/?version=latest)](https://rollnw.readthedocs.io/en/latest/?badge=latest)
 
-# rollNW
+# rollnw.py
 
-rollNW is an homage to Neverwinter Nights in C++ and Python.  See the [docs](https://rollnw.readthedocs.io/en/latest/) and [tests](https://github.com/jd28/rollnw/tree/main/tests) for more info, or open an IDE in browser in the quickstart section below.
+rollnw.py is the Python bindings for [rollnw](https://github.com/jd28/rollnw).
 
 **This library is a work-in-progress.  There will be serious refactoring and until there is a real release, it should be assumed the library is a work-in-progress.**
 
@@ -33,21 +33,9 @@ rollNW is an homage to Neverwinter Nights in C++ and Python.  See the [docs](htt
 
 [Github Codespaces](https://github.com/features/codespaces) is available to those in the beta.
 
-## Bindings
-
-- [rollnw.py](https://github.com/jd28/rollnw.py) (python)
-
 ## History
 
 A lot of what's here was written in the 2011-2015 range as part of personal minimalist toolset, modernized and with new EE stuff added.  In some sense, it's a work of historical fiction -- it's what I'd have suggested at the start of NWN:EE: get the game and the community on the same set of libraries.  Similarly to an older project that asked ["what if Bioware had stuck with Lua?"](https://solstice.readthedocs.io/en/latest/).  The answer to that was pretty positive: a decade ahead, at least, of nwscript.
-
-## Moonshots
-
-You make ask yourself, why?  But, to paraphrase Tennyson, ours isn't to question why, it's but to do and die and learn and maybe make neat things.  In that spirit, here is a list of crazy projects that this library hopes to facilitate and that all fly in the face of "WHY?".
-
-* A nwscript [Language Server](https://en.wikipedia.org/wiki/Language_Server_Protocol)
-* A modern, cross-platform nwexplorer.
-* And, of course, the ever elusive open source NWN Toolset, with plugins, scripting, and a built-in console.
 
 ## Credits
 
