@@ -87,13 +87,7 @@
         {
             "name": "ci-macos-python",
             "inherits": "macos-python",
-            "displayName": "CI macOS with python",
-            "cacheVariables": {
-                "ENABLE_TESTING": {
-                    "type": "BOOL",
-                    "value": "OFF"
-                }
-            }
+            "displayName": "CI macOS with python"
         }
     ],
     "buildPresets": [

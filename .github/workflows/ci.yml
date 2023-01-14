@@ -19,7 +19,7 @@ on:
 
 env:
   buildDir: "${{ github.workspace }}/build/"
-  vcpkg-tag: "2022.09.27"
+  vcpkg-tag: "2023.01.09"
   VCPKG_ROOT: "${{ github.workspace }}/vcpkg/"
   VCPKG_DEFAULT_BINARY_CACHE: "${{ github.workspace }}/vcpkg/.cache"
   NWN_ROOT: "${{ github.workspace }}/nwn/"
