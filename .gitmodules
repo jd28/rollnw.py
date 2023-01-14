@@ -1,0 +1,3 @@
+[submodule "external/rollnw"]
+	path = external/rollnw
+	url = https://github.com/jd28/rollnw
