@@ -77,37 +77,229 @@
 <h1>rollnw.nwn1<a class="headerlink" href="#rollnw-nwn1" title="Permalink to this headline"></a></h1>
 <div class="section" id="functions">
 <h2>functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.attack_bonus">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">attack_bonus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="rollnw.html#rollnw.Creature" title="rollnw.Creature"><span class="pre">rollnw.Creature</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">versus</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#rollnw.nwn1.attack_bonus" title="Permalink to this definition"></a></dt>
+<dd><p>Calculates attack bonus</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.base_attack_bonus">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">base_attack_bonus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="rollnw.html#rollnw.Creature" title="rollnw.Creature"><span class="pre">rollnw.Creature</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#rollnw.nwn1.base_attack_bonus" title="Permalink to this definition"></a></dt>
+<dd><p>Calculates base attack bonus</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.calculate_ac_versus">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">calculate_ac_versus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="rollnw.html#rollnw.ObjectBase" title="rollnw.ObjectBase"><span class="pre">rollnw.ObjectBase</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">versus</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="rollnw.html#rollnw.ObjectBase" title="rollnw.ObjectBase"><span class="pre">rollnw.ObjectBase</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_touch_attack</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#rollnw.nwn1.calculate_ac_versus" title="Permalink to this definition"></a></dt>
+<dd><p>Calculate Armor Class versus another object</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.calculate_item_ac">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">calculate_item_ac</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="rollnw.html#rollnw.Item" title="rollnw.Item"><span class="pre">rollnw.Item</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#rollnw.nwn1.calculate_item_ac" title="Permalink to this definition"></a></dt>
+<dd><p>Calculates the armor class of a piece of armor</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.can_equip_item">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">can_equip_item</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="rollnw.html#rollnw.Creature" title="rollnw.Creature"><span class="pre">rollnw.Creature</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">item</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">slot</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rollnw.nwn1.can_equip_item" title="Permalink to this definition"></a></dt>
+<dd><p>Determines if an item can be equipped</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.can_use_monk_abilities">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">can_use_monk_abilities</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="rollnw.html#rollnw.Creature" title="rollnw.Creature"><span class="pre">rollnw.Creature</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#rollnw.nwn1.can_use_monk_abilities" title="Permalink to this definition"></a></dt>
+<dd><p>Determines if monk class abilities are usable and monk class level</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.effect_ability_modifier">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">effect_ability_modifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ability</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modifier</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="rollnw.html#rollnw.Effect" title="rollnw.Effect"><span class="pre">rollnw.Effect</span></a></span></span><a class="headerlink" href="#rollnw.nwn1.effect_ability_modifier" title="Permalink to this definition"></a></dt>
+<dd><p>Creates an ability modifier effect</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.effect_armor_class_modifier">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">effect_armor_class_modifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modifier</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="rollnw.html#rollnw.Effect" title="rollnw.Effect"><span class="pre">rollnw.Effect</span></a></span></span><a class="headerlink" href="#rollnw.nwn1.effect_armor_class_modifier" title="Permalink to this definition"></a></dt>
+<dd><p>Creates an armor class modifier effect</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.effect_attack_modifier">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">effect_attack_modifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attack</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modifier</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="rollnw.html#rollnw.Effect" title="rollnw.Effect"><span class="pre">rollnw.Effect</span></a></span></span><a class="headerlink" href="#rollnw.nwn1.effect_attack_modifier" title="Permalink to this definition"></a></dt>
+<dd><p>Creates an attack modifier effect</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.effect_haste">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">effect_haste</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="rollnw.html#rollnw.Effect" title="rollnw.Effect"><span class="pre">rollnw.Effect</span></a></span></span><a class="headerlink" href="#rollnw.nwn1.effect_haste" title="Permalink to this definition"></a></dt>
+<dd><p>Creates a haste effect</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.effect_skill_modifier">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">effect_skill_modifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">skill</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modifier</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="rollnw.html#rollnw.Effect" title="rollnw.Effect"><span class="pre">rollnw.Effect</span></a></span></span><a class="headerlink" href="#rollnw.nwn1.effect_skill_modifier" title="Permalink to this definition"></a></dt>
+<dd><p>Creates an skill modifier effect</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.equip_index_to_attack_type">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">equip_index_to_attack_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">equip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rollnw.nwn1.equip_index_to_attack_type" title="Permalink to this definition"></a></dt>
+<dd><p>Converts an equip index to an attack type</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.equip_item">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">equip_item</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">slot</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rollnw.nwn1.equip_item" title="Permalink to this definition"></a></dt>
+<dd><p>Equip an item</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.get_ability_modifier">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">get_ability_modifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="rollnw.html#rollnw.Creature" title="rollnw.Creature"><span class="pre">rollnw.Creature</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">ability</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">base</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#rollnw.nwn1.get_ability_modifier" title="Permalink to this definition"></a></dt>
+<dd><p>Gets creatures ability modifier</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.get_ability_score">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">get_ability_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="rollnw.html#rollnw.Creature" title="rollnw.Creature"><span class="pre">rollnw.Creature</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">ability</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">base</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#rollnw.nwn1.get_ability_score" title="Permalink to this definition"></a></dt>
+<dd><p>Gets creatures ability score</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.get_dex_modifier">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">get_dex_modifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="rollnw.html#rollnw.Creature" title="rollnw.Creature"><span class="pre">rollnw.Creature</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#rollnw.nwn1.get_dex_modifier" title="Permalink to this definition"></a></dt>
+<dd><p>Gets creatures dexterity modifier as modified by armor, etc.</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.get_equipped_item">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">get_equipped_item</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="rollnw.html#rollnw.Creature" title="rollnw.Creature"><span class="pre">rollnw.Creature</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">slot</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rollnw.nwn1.get_equipped_item" title="Permalink to this definition"></a></dt>
+<dd><p>Gets an equipped item</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.get_skill_rank">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">get_skill_rank</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="rollnw.html#rollnw.Creature" title="rollnw.Creature"><span class="pre">rollnw.Creature</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">skill</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">versus</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">base</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rollnw.nwn1.get_skill_rank" title="Permalink to this definition"></a></dt>
+<dd><p>Determines creatures skill rank</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.get_weapon_by_attack_type">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">get_weapon_by_attack_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="rollnw.html#rollnw.Creature" title="rollnw.Creature"><span class="pre">rollnw.Creature</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="rollnw.html#rollnw.Item" title="rollnw.Item"><span class="pre">rollnw.Item</span></a></span></span><a class="headerlink" href="#rollnw.nwn1.get_weapon_by_attack_type" title="Permalink to this definition"></a></dt>
+<dd><p>Gets an equipped weapon by attack type</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.is_ranged_weapon">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">is_ranged_weapon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="rollnw.html#rollnw.Item" title="rollnw.Item"><span class="pre">rollnw.Item</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#rollnw.nwn1.is_ranged_weapon" title="Permalink to this definition"></a></dt>
+<dd><p>Determines if weapon is ranged</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.is_shield">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">is_shield</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">baseitem</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#rollnw.nwn1.is_shield" title="Permalink to this definition"></a></dt>
+<dd><p>Determines if item is a shield</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.itemprop_ability_modifier">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">itemprop_ability_modifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ability</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modifier</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">rollnw.ItemProperty</span></span></span><a class="headerlink" href="#rollnw.nwn1.itemprop_ability_modifier" title="Permalink to this definition"></a></dt>
+<dd><p>Creates ability modifier item property</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.itemprop_armor_class_modifier">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">itemprop_armor_class_modifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">rollnw.ItemProperty</span></span></span><a class="headerlink" href="#rollnw.nwn1.itemprop_armor_class_modifier" title="Permalink to this definition"></a></dt>
+<dd><p>Creates armor modifier item property</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.itemprop_attack_modifier">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">itemprop_attack_modifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">rollnw.ItemProperty</span></span></span><a class="headerlink" href="#rollnw.nwn1.itemprop_attack_modifier" title="Permalink to this definition"></a></dt>
+<dd><p>Creates attack modifier item property</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.itemprop_enhancement_modifier">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">itemprop_enhancement_modifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">rollnw.ItemProperty</span></span></span><a class="headerlink" href="#rollnw.nwn1.itemprop_enhancement_modifier" title="Permalink to this definition"></a></dt>
+<dd><p>Creates enhancement modifier item property</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.itemprop_haste">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">itemprop_haste</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">rollnw.ItemProperty</span></span></span><a class="headerlink" href="#rollnw.nwn1.itemprop_haste" title="Permalink to this definition"></a></dt>
+<dd><p>Creates haste item property</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.itemprop_skill_modifier">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">itemprop_skill_modifier</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">skill</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modifier</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">rollnw.ItemProperty</span></span></span><a class="headerlink" href="#rollnw.nwn1.itemprop_skill_modifier" title="Permalink to this definition"></a></dt>
+<dd><p>Creates skill modifier item property</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.number_of_attacks">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">number_of_attacks</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="rollnw.html#rollnw.Creature" title="rollnw.Creature"><span class="pre">rollnw.Creature</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">offhand</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#rollnw.nwn1.number_of_attacks" title="Permalink to this definition"></a></dt>
+<dd><p>Calculates number of attacks</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.queue_remove_effect_by">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">queue_remove_effect_by</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="rollnw.html#rollnw.ObjectBase" title="rollnw.ObjectBase"><span class="pre">rollnw.ObjectBase</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">creator</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="rollnw.html#rollnw.ObjectHandle" title="rollnw.ObjectHandle"><span class="pre">rollnw.ObjectHandle</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rollnw.nwn1.queue_remove_effect_by" title="Permalink to this definition"></a></dt>
+<dd><p>Queues remove effect events by effect creator</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.unequip_item">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">unequip_item</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">slot</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rollnw.nwn1.unequip_item" title="Permalink to this definition"></a></dt>
+<dd><p>Unequips an item</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.weapon_is_finessable">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">weapon_is_finessable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="rollnw.html#rollnw.Creature" title="rollnw.Creature"><span class="pre">rollnw.Creature</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">weapon</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="rollnw.html#rollnw.Item" title="rollnw.Item"><span class="pre">rollnw.Item</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#rollnw.nwn1.weapon_is_finessable" title="Permalink to this definition"></a></dt>
+<dd><p>Determines if a weapon is finessable</p>
+</dd></dl>
+
 <hr class="docutils" />
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.nwn1.weapon_iteration">
+<span class="sig-prename descclassname"><span class="pre">rollnw.nwn1.</span></span><span class="sig-name descname"><span class="pre">weapon_iteration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="rollnw.html#rollnw.Creature" title="rollnw.Creature"><span class="pre">rollnw.Creature</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">weapon</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="rollnw.html#rollnw.Item" title="rollnw.Item"><span class="pre">rollnw.Item</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#rollnw.nwn1.weapon_iteration" title="Permalink to this definition"></a></dt>
+<dd><p>Calculates weapon iteration, e.g. 5 or 3 for monk weapons</p>
+</dd></dl>
+
 <p>rollnw.nwn1.——————————————————————————-</p>
 </div>
 </div>
