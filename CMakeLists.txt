@@ -40,7 +40,3 @@ endif()
 add_subdirectory(external/rollnw)
 add_subdirectory(external/pybind11)
 add_subdirectory(src)
-
-# if(ROLLNW_PY_BUILD_DOCS)
-# add_subdirectory(docs)
-# endif()
