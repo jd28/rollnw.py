@@ -1854,6 +1854,17 @@ class AttackResult(enum.IntEnum):
     miss_by_roll = auto()
 
 
+class DiceRoll:
+    """Dice roll
+
+    Attributes:
+        dice (int)
+        sides (int)
+        bonus (int)
+    """
+    pass
+
+
 class EffectCategory(enum.IntEnum):
     """Effect category
     """

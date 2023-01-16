@@ -51,8 +51,20 @@ void init_nwn1(py::module& m)
     m.def("resolve_attack_roll", &nwn1::resolve_attack);
     m.def("resolve_attack_type", &nwn1::resolve_attack_type);
     m.def("resolve_concealment", &nwn1::resolve_concealment);
+    m.def("resolve_critical_multiplier", &nwn1::resolve_critical_multiplier);
+    m.def("resolve_critical_threat", &nwn1::resolve_critical_threat);
+    m.def("resolve_damage_modifiers", &nwn1::resolve_damage_modifiers);
+    m.def("resolve_damage_immunity", &nwn1::resolve_damage_immunity);
+    m.def("resolve_damage_reduction", &nwn1::resolve_damage_reduction);
+    m.def("resolve_damage_resistance", &nwn1::resolve_damage_resistance);
+    m.def("resolve_dual_wield_penalty", &nwn1::resolve_dual_wield_penalty);
+    m.def("resolve_iteration_penalty", &nwn1::resolve_iteration_penalty);
     m.def("resolve_number_of_attacks", &nwn1::resolve_number_of_attacks, py::arg("obj"));
-
+    m.def("resolve_target_state", &nwn1::resolve_target_state);
+    m.def("resolve_unarmed_damage", &nwn1::resolve_unarmed_damage);
+    m.def("resolve_weapon_damage", &nwn1::resolve_weapon_damage);
+    m.def("resolve_weapon_damage_flags", &nwn1::resolve_weapon_damage_flags);
+    m.def("resolve_weapon_power", &nwn1::resolve_weapon_power);
     m.def("weapon_is_finessable", &nwn1::weapon_is_finessable);
     m.def("weapon_iteration", &nwn1::weapon_iteration);
 

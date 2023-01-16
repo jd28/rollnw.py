@@ -1,5 +1,5 @@
 from .. import ObjectBase, ObjectHandle, Area, Creature, Door, Encounter, Item, Placeable, Store, Trigger, Waypoint
-from .. import Effect, ItemProperty
+from .. import Effect, ItemProperty, DiceRoll, AttackData
 
 # == Abilities ===============================================================
 # ============================================================================
@@ -81,7 +81,7 @@ def resolve_attack_bonus(obj: Creature, type, versus: ObjectBase = None) -> int:
     pass
 
 
-def resolve_attack_damage(obj: Creature, versus: ObjectBase, data) -> int:
+def resolve_attack_damage(obj: Creature, versus: ObjectBase, data: AttackData) -> int:
     """Resolves damage from an attack"""
     pass
 
@@ -102,8 +102,59 @@ def resolve_critical_threat(obj: Creature, type) -> int:
     pass
 
 
+def resolve_damage_modifiers(obj: Creature, versus: ObjectBase, data: AttackData) -> None:
+    """Resolves resistance, immunity, and reduction
+    """
+    pass
+
+
+def resolve_damage_immunity(obj: ObjectBase, dmg_type, versus: ObjectBase = None) -> int:
+    """Resolves damage immunity
+    """
+    pass
+
+
+def resolve_damage_reduction(obj: ObjectBase, power: int, versus: ObjectBase = None) -> tuple[int, Effect]:
+    """Resolves damage reduction
+    """
+    pass
+
+
+def resolve_damage_resistance(obj: ObjectBase,  dmg_type, versus: ObjectBase = None) -> tuple[int, Effect]:
+    """Resolves damage resistance
+    """
+    pass
+
+
+def resolve_dual_wield_penalty(obj: Creature) -> tuple[int, int]:
+    """ Resolves dual wield attack bonus penalty
+    """
+    pass
+
+
+def resolve_iteration_penalty(obj: Creature, attack_type):
+    """Resolves iteration attack bonus penalty
+    """
+    pass
+
+
 def resolve_number_of_attacks(obj: Creature, offhand: bool = False) -> tuple[int, int]:
     """Calculates number of attacks"""
+    pass
+
+
+def resolve_target_state(obj: Creature, versus: ObjectBase):
+    """Resolves damage from an attack"""
+    pass
+
+
+def resolve_unarmed_damage(obj: Creature) -> DiceRoll:
+    """Resolves unarmed damage"""
+    pass
+
+
+def resolve_weapon_damage(obj: Creature, weapon: Item) -> DiceRoll:
+    """Resolves weapon damage"""
     pass
 
 
