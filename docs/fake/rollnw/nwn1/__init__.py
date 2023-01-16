@@ -44,13 +44,10 @@ def can_use_monk_abilities(obj: Creature) -> tuple[bool, int]:
 # ============================================================================
 
 
-def attack_bonus(obj: Creature, type, versus=None) -> int:
-    """Calculates attack bonus"""
+def attacks_per_second(obj: Creature, type, versus: ObjectBase) -> float:
+    """Number of attacks per second
+    """
     pass
-
-
-# float attacks_per_second(const nw:: Creature * obj, const  * vs)
-#     """Number of attacks per second"""
 
 
 def base_attack_bonus(obj: Creature) -> int:
@@ -63,13 +60,55 @@ def equip_index_to_attack_type(equip):
     pass
 
 
-def number_of_attacks(obj: Creature, offhand: bool = False) -> int:
+def get_weapon_by_attack_type(obj: Creature, type) -> Item:
+    """Gets an equipped weapon by attack type"""
+    pass
+
+
+def is_flanked(target: Creature, attacker: Creature) -> bool:
+    """
+    """
+    pass
+
+
+def resolve_attack(obj: Creature, type, versus: ObjectBase):
+    """Resolves an attack"""
+    pass
+
+
+def resolve_attack_bonus(obj: Creature, type, versus: ObjectBase = None) -> int:
+    """Calculates attack bonus"""
+    pass
+
+
+def resolve_attack_damage(obj: Creature, versus: ObjectBase, data) -> int:
+    """Resolves damage from an attack"""
+    pass
+
+
+def resolve_concealment(obj: ObjectBase, type, target: ObjectBase, vs_ranged: bool) -> tuple[int, bool]:
+    """Resolves an concealment - i.e. the highest of concealment and miss chance
+    """
+    pass
+
+
+def resolve_critical_multiplier(obj: Creature, type, versus: ObjectBase = None) -> int:
+    """Resolves critical multiplier"""
+    pass
+
+
+def resolve_critical_threat(obj: Creature, type) -> int:
+    """Resolves critical multiplier"""
+    pass
+
+
+def resolve_number_of_attacks(obj: Creature, offhand: bool = False) -> tuple[int, int]:
     """Calculates number of attacks"""
     pass
 
 
-def get_weapon_by_attack_type(obj: Creature, type) -> Item:
-    """Gets an equipped weapon by attack type"""
+def resolve_weapon_power(obj: Creature, weapon: Item) -> int:
+    """Resolves weapon power"""
     pass
 
 

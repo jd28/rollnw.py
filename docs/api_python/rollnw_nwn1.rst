@@ -4,10 +4,6 @@ rollnw.nwn1
 functions
 ---------
 
-.. autofunction:: rollnw.nwn1.attack_bonus
-
--------------------------------------------------------------------------------
-
 .. autofunction:: rollnw.nwn1.base_attack_bonus
 
 -------------------------------------------------------------------------------
@@ -112,11 +108,19 @@ functions
 
 -------------------------------------------------------------------------------
 
-.. autofunction:: rollnw.nwn1.number_of_attacks
+.. autofunction:: rollnw.nwn1.queue_remove_effect_by
 
 -------------------------------------------------------------------------------
 
-.. autofunction:: rollnw.nwn1.queue_remove_effect_by
+.. autofunction:: rollnw.nwn1.resolve_attack
+
+-------------------------------------------------------------------------------
+
+.. autofunction:: rollnw.nwn1.resolve_attack_bonus
+
+-------------------------------------------------------------------------------
+
+.. autofunction:: rollnw.nwn1.resolve_number_of_attacks
 
 -------------------------------------------------------------------------------
 
