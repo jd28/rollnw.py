@@ -85,9 +85,6 @@ jobs:
       - name: all - download vcpkg
         run: |
           git clone https://github.com/microsoft/vcpkg ${{ github.workspace }}/vcpkg || true
-          pushd vcpkg
-          git checkout --force ${{ env.vcpkg-tag }}
-          popd
 
       - name: all - cache vcpkg
         id: cache-vcpkg
