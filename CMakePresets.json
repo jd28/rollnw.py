@@ -61,7 +61,7 @@
         {
             "name": "ci-windows-python",
             "inherits": "windows-python",
-            "generator": "Ninja",
+            "generator": "Visual Studio 16 2019",
             "displayName": "windows ci build",
             "description": "windows ci build"
         },
