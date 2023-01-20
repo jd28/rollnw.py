@@ -38,7 +38,7 @@ void init_nwn1(py::module& m)
 
     // == Combat ==================================================================
     // ============================================================================
-    m.def("attacks_per_second", &nwn1::attacks_per_second);
+
     m.def("base_attack_bonus", &nwn1::base_attack_bonus);
     m.def("equip_index_to_attack_type", &nwn1::equip_index_to_attack_type);
     m.def("get_weapon_by_attack_type", &nwn1::get_weapon_by_attack_type);
