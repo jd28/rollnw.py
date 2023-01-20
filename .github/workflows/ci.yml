@@ -122,11 +122,6 @@ jobs:
         with:
           path: ./wheelhouse/*.whl
 
-      - name: cibuildwheel cache dir
-        run:  |
-          ls ${{ github.workspace }}/.cache/cibuildwheel || true
-
-
   build_sdist:
     name: Build source distribution
     runs-on: ubuntu-20.04
