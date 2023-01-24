@@ -37,6 +37,10 @@ else()
     message(FATAL "Unsupported target platform")
 endif()
 
+if(ROLLNW_ENABLE_LEGACY)
+add_definitions(-DROLLNW_ENABLE_LEGACY)
+endif()
+
 add_subdirectory(external/rollnw)
 add_subdirectory(external/pybind11)
 add_subdirectory(src)

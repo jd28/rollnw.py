@@ -70,9 +70,9 @@ T* create_object_from_file_helper(const std::filesystem::path& path)
         nw::Gff data{p};
         auto obj = new T;
         if constexpr (!std::is_same_v<T, nw::Player>) {
-            T::deserialize(obj, data.toplevel(), nw::SerializationProfile::blueprint);
+            deserialize(obj, data.toplevel(), nw::SerializationProfile::blueprint);
         } else {
-            T::deserialize(obj, data.toplevel());
+            deserialize(obj, data.toplevel());
         }
         return obj;
     }

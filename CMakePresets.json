@@ -16,6 +16,14 @@
                 "CMAKE_TOOLCHAIN_FILE": {
                     "value": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
                     "type": "FILEPATH"
+                },
+                "LUAU_BUILD_TESTS": {
+                    "type": "BOOL",
+                    "value": "OFF"
+                },
+                "ROLLNW_ENABLE_LEGACY": {
+                    "type": "BOOL",
+                    "value": "ON"
                 }
             }
         },
