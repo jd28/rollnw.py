@@ -1,5 +1,6 @@
 #pragma once
 
+#include <nw/model/Mdl.hpp>
 #include <nw/objects/Area.hpp>
 #include <nw/objects/Creature.hpp>
 #include <nw/objects/Door.hpp>
@@ -25,6 +26,7 @@
 #include <vector>
 
 PYBIND11_MAKE_OPAQUE(std::vector<glm::vec3>)
+PYBIND11_MAKE_OPAQUE(std::vector<nw::model::Vertex>)
 PYBIND11_MAKE_OPAQUE(std::vector<nw::ClassEntry>)
 PYBIND11_MAKE_OPAQUE(std::vector<nw::InventoryItem>)
 PYBIND11_MAKE_OPAQUE(std::vector<nw::Resref>)

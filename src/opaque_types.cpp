@@ -16,6 +16,7 @@ void bind_opaque_types(py::module& m)
     py::bind_vector<std::vector<uint8_t>>(m, "UInt8Vector");
     py::bind_vector<std::vector<std::string>>(m, "StringVector");
     py::bind_vector<std::vector<glm::vec3>>(m, "Vec3Vector");
+    py::bind_vector<std::vector<nw::model::Vertex>>(m, "VertexVector");
     py::bind_vector<std::vector<nw::ClassEntry>>(m, "ClassEntryVector");
     py::bind_vector<std::vector<nw::InventoryItem>>(m, "InventoryItemVector");
     py::bind_vector<std::vector<nw::LevelUp>>(m, "LevelUpVector");

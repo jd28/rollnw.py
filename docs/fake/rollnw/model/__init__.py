@@ -280,6 +280,18 @@ class MdlReferenceNode(MdlNode):
     pass
 
 
+class Vertex:
+    """Vertex data
+
+    Attributes:
+        position
+        tex_coords
+        normal
+        tangent
+    """
+    pass
+
+
 class MdlTrimeshNode(MdlNode):
     """Trimesh Node
 
@@ -291,7 +303,6 @@ class MdlTrimeshNode(MdlNode):
         bitmap
         center
         diffuse
-        faces
         materialname
         render
         renderhint
@@ -306,11 +317,7 @@ class MdlTrimeshNode(MdlNode):
         displtype
         lightmapped
         multimaterial
-        colors
-        verts
-        tverts
-        normals
-        tangents
+        vertices: [Vertex]
     """
     pass
 

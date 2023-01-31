@@ -213,6 +213,12 @@ void init_model(py::module& nw)
         .def_readwrite("refmodel", &nw::model::ReferenceNode::refmodel)
         .def_readwrite("reattachable", &nw::model::ReferenceNode::reattachable);
 
+    py::class_<nw::model::Vertex>(nw, "Vertex")
+        .def_readwrite("position", &nw::model::Vertex::position)
+        .def_readwrite("tex_coords", &nw::model::Vertex::tex_coords)
+        .def_readwrite("normal", &nw::model::Vertex::normal)
+        .def_readwrite("tangent", &nw::model::Vertex::tangent);
+
     py::class_<nw::model::TrimeshNode, nw::model::Node>(nw, "MdlTrimeshNode")
         .def_readwrite("ambient", &nw::model::TrimeshNode::ambient)
         .def_readwrite("beaming", &nw::model::TrimeshNode::beaming)
@@ -221,7 +227,6 @@ void init_model(py::module& nw)
         .def_readwrite("bitmap", &nw::model::TrimeshNode::bitmap)
         .def_readwrite("center", &nw::model::TrimeshNode::center)
         .def_readwrite("diffuse", &nw::model::TrimeshNode::diffuse)
-        .def_readwrite("faces", &nw::model::TrimeshNode::faces)
         .def_readwrite("materialname", &nw::model::TrimeshNode::materialname)
         .def_readwrite("render", &nw::model::TrimeshNode::render)
         .def_readwrite("renderhint", &nw::model::TrimeshNode::renderhint)
@@ -237,10 +242,7 @@ void init_model(py::module& nw)
         .def_readwrite("lightmapped", &nw::model::TrimeshNode::lightmapped)
         .def_readwrite("multimaterial", &nw::model::TrimeshNode::multimaterial)
         .def_readwrite("colors", &nw::model::TrimeshNode::colors)
-        .def_readwrite("verts", &nw::model::TrimeshNode::verts)
-        .def_readwrite("tverts", &nw::model::TrimeshNode::tverts)
-        .def_readwrite("normals", &nw::model::TrimeshNode::normals)
-        .def_readwrite("tangents", &nw::model::TrimeshNode::tangents);
+        .def_readwrite("vertices", &nw::model::TrimeshNode::vertices);
 
     py::class_<nw::model::SkinWeight>(nw, "MdlSkinWeight")
         .def_readwrite("bones", &nw::model::SkinWeight::bones)
@@ -318,7 +320,8 @@ void init_model(py::module& nw)
             }
             return py::iter(pylist);
         })
-        .def_readwrite("supermodel", &nw::model::Model::supermodel, py::return_value_policy::reference)
+        .def_property_readonly(
+            "supermodel", [](const nw::model::Model& self) { return self.supermodel.get(); }, py::return_value_policy::reference)
         .def_readwrite("bmin", &nw::model::Model::bmin)
         .def_readwrite("bmax", &nw::model::Model::bmax)
         .def_readwrite("radius", &nw::model::Model::radius)
