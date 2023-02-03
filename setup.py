@@ -49,7 +49,7 @@ class CMakeBuild(build_ext):
 
 setup(
     name="rollnw",
-    version="0.11.dev0",
+    version="0.12.dev0",
     author="jmd",
     author_email="joshua.m.dean@gmail.com",
     include_package_data=True,

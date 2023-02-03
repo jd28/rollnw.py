@@ -1,6 +1,6 @@
 {
     "name": "rollnw",
-    "version": "0.1.0",
+    "version": "0.12.0",
     "dependencies": [
         "catch2",
         "fmt",
@@ -16,7 +16,6 @@
             "platform": "windows"
         },
         "glm",
-        "benchmark",
         "stduuid"
     ]
 }
