@@ -4394,6 +4394,123 @@ be constructed.</p>
 </dd></dl>
 
 <dl class="py class">
+<dt class="sig sig-object py" id="rollnw.Plt">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rollnw.</span></span><span class="sig-name descname"><span class="pre">Plt</span></span><a class="headerlink" href="#rollnw.Plt" title="Permalink to this definition"></a></dt>
+<dd><p>Implementation of PLT file format</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="rollnw.Plt.height">
+<span class="sig-name descname"><span class="pre">height</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rollnw.Plt.height" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rollnw.Plt.pixels">
+<span class="sig-name descname"><span class="pre">pixels</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rollnw.Plt.pixels" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rollnw.Plt.valid">
+<span class="sig-name descname"><span class="pre">valid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rollnw.Plt.valid" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="rollnw.Plt.width">
+<span class="sig-name descname"><span class="pre">width</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#rollnw.Plt.width" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="rollnw.PltColors">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rollnw.</span></span><span class="sig-name descname"><span class="pre">PltColors</span></span><a class="headerlink" href="#rollnw.PltColors" title="Permalink to this definition"></a></dt>
+<dd><p>Plt Color Array</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rollnw.PltColors.colors">
+<span class="sig-name descname"><span class="pre">colors</span></span><a class="headerlink" href="#rollnw.PltColors.colors" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<p class="rubric">Notes</p>
+<p>This would be the colors that a player would select</p>
+</dd></dl>
+
+<dl class="py class enum">
+<dt class="sig sig-object py" id="rollnw.PltLayer">
+<em class="property"><span class="pre">enum</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rollnw.</span></span><span class="sig-name descname"><span class="pre">PltLayer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#rollnw.PltLayer" title="Permalink to this definition"></a></dt>
+<dd><p>Plt layers</p>
+<dl class="field-list simple">
+<dt class="field-odd">Member Type</dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></p>
+</dd>
+</dl>
+<p>Valid values are as follows:</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rollnw.PltLayer.plt_layer_skin">
+<span class="sig-name descname"><span class="pre">plt_layer_skin</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;PltLayer.plt_layer_skin:</span> <span class="pre">0&gt;</span></em><a class="headerlink" href="#rollnw.PltLayer.plt_layer_skin" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rollnw.PltLayer.plt_layer_hair">
+<span class="sig-name descname"><span class="pre">plt_layer_hair</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;PltLayer.plt_layer_hair:</span> <span class="pre">1&gt;</span></em><a class="headerlink" href="#rollnw.PltLayer.plt_layer_hair" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rollnw.PltLayer.plt_layer_metal1">
+<span class="sig-name descname"><span class="pre">plt_layer_metal1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;PltLayer.plt_layer_metal1:</span> <span class="pre">2&gt;</span></em><a class="headerlink" href="#rollnw.PltLayer.plt_layer_metal1" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rollnw.PltLayer.plt_layer_metal2">
+<span class="sig-name descname"><span class="pre">plt_layer_metal2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;PltLayer.plt_layer_metal2:</span> <span class="pre">3&gt;</span></em><a class="headerlink" href="#rollnw.PltLayer.plt_layer_metal2" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rollnw.PltLayer.plt_layer_cloth1">
+<span class="sig-name descname"><span class="pre">plt_layer_cloth1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;PltLayer.plt_layer_cloth1:</span> <span class="pre">4&gt;</span></em><a class="headerlink" href="#rollnw.PltLayer.plt_layer_cloth1" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rollnw.PltLayer.plt_layer_cloth2">
+<span class="sig-name descname"><span class="pre">plt_layer_cloth2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;PltLayer.plt_layer_cloth2:</span> <span class="pre">5&gt;</span></em><a class="headerlink" href="#rollnw.PltLayer.plt_layer_cloth2" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rollnw.PltLayer.plt_layer_leather1">
+<span class="sig-name descname"><span class="pre">plt_layer_leather1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;PltLayer.plt_layer_leather1:</span> <span class="pre">6&gt;</span></em><a class="headerlink" href="#rollnw.PltLayer.plt_layer_leather1" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rollnw.PltLayer.plt_layer_leather2">
+<span class="sig-name descname"><span class="pre">plt_layer_leather2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;PltLayer.plt_layer_leather2:</span> <span class="pre">7&gt;</span></em><a class="headerlink" href="#rollnw.PltLayer.plt_layer_leather2" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rollnw.PltLayer.plt_layer_tattoo1">
+<span class="sig-name descname"><span class="pre">plt_layer_tattoo1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;PltLayer.plt_layer_tattoo1:</span> <span class="pre">8&gt;</span></em><a class="headerlink" href="#rollnw.PltLayer.plt_layer_tattoo1" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rollnw.PltLayer.plt_layer_tattoo2">
+<span class="sig-name descname"><span class="pre">plt_layer_tattoo2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;PltLayer.plt_layer_tattoo2:</span> <span class="pre">9&gt;</span></em><a class="headerlink" href="#rollnw.PltLayer.plt_layer_tattoo2" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="rollnw.PltPixel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rollnw.</span></span><span class="sig-name descname"><span class="pre">PltPixel</span></span><a class="headerlink" href="#rollnw.PltPixel" title="Permalink to this definition"></a></dt>
+<dd><p>Plt pixel</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rollnw.PltPixel.color">
+<span class="sig-name descname"><span class="pre">color</span></span><a class="headerlink" href="#rollnw.PltPixel.color" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="rollnw.PltPixel.layer">
+<span class="sig-name descname"><span class="pre">layer</span></span><a class="headerlink" href="#rollnw.PltPixel.layer" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="rollnw.Resource">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">rollnw.</span></span><span class="sig-name descname"><span class="pre">Resource</span></span><a class="headerlink" href="#rollnw.Resource" title="Permalink to this definition"></a></dt>
 <dd><p>Resource name</p>
@@ -5947,6 +6064,12 @@ if passed a LanguageID, default constructs with the TLKs language set to <code c
 <dd class="field-odd"><p><strong>path</strong> (<em>str</em>) – Path to zip file</p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="rollnw.decode_plt_color">
+<span class="sig-prename descclassname"><span class="pre">rollnw.</span></span><span class="sig-name descname"><span class="pre">decode_plt_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#rollnw.Plt" title="rollnw.Plt"><span class="pre">rollnw.Plt</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#rollnw.decode_plt_color" title="Permalink to this definition"></a></dt>
+<dd><p>Decodes PLT and user selected colors to RBGA</p>
 </dd></dl>
 
 <dl class="py function">
