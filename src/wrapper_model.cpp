@@ -158,9 +158,11 @@ void init_model(py::module& nw)
         .def_readonly("controller_data", &nw::model::Node::controller_data)
         .def(
             "get_controller", [](const nw::model::Node& self, uint32_t type, bool is_key) {
-                auto [key, data] = self.get_controller(type, is_key);
+                auto key = self.get_controller(type, is_key);
                 // This is terrible..
-                return std::make_tuple(key, std::vector<float>(data.begin(), data.end()));
+                return py::make_tuple(key.key,
+                    is_key ? std::vector<float>(key.time.begin(), key.time.end()) : std::vector<float>(),
+                    std::vector<float>(key.data.begin(), key.data.end()));
             },
             py::return_value_policy::reference);
 

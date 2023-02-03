@@ -15,10 +15,11 @@ def test_basic_loading():
     assert isinstance(node, MdlTrimeshNode)
 
     assert node.name == "rthigh_g"
-    assert len(node.verts) == 14
-    key, data = node.get_controller(MdlControllerType.position, False)
+    assert len(node.vertices) == 14
+    key, time, data = node.get_controller(MdlControllerType.position, False)
     assert key
     assert not key.is_key
+    assert len(time) == 0
     assert len(data) == 3
     assert key.name == "position"
 
@@ -34,7 +35,7 @@ def test_basic_loading():
     assert len(anim) == 55
     anim_node = anim[5]
     assert anim_node.name == "rthigh_g"
-    key, data = anim_node.get_controller(
+    key, time, data = anim_node.get_controller(
         MdlControllerType.orientation, True)
     assert key
     assert key.is_key

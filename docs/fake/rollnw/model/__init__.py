@@ -165,6 +165,7 @@ class MdlControllerKey:
         type
         rows
         key_offset
+        time_offset
         data_offset
         columns
         is_key
@@ -197,8 +198,11 @@ class MdlNode:
        controller_data: controller_data
     """
 
-    def get_controller(self, type: int, is_key: bool):
-        """Gets a controller key and data
+    def get_controller(self, type: int, is_key: bool) -> tuple[MdlControllerKey, list[float], list[float]]:
+        """Gets a controller key and times and key data
+
+        Note:
+            If not an animation, time will be empty
         """
         pass
 
