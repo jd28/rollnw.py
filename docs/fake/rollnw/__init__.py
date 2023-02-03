@@ -581,6 +581,63 @@ class Ini:
         pass
 
 
+class PltLayer(enum.IntEnum):
+    """Plt layers"""
+    plt_layer_skin = 0
+    plt_layer_hair = 1
+    plt_layer_metal1 = 2
+    plt_layer_metal2 = 3
+    plt_layer_cloth1 = 4
+    plt_layer_cloth2 = 5
+    plt_layer_leather1 = 6
+    plt_layer_leather2 = 7
+    plt_layer_tattoo1 = 8
+    plt_layer_tattoo2 = 9
+
+
+class PltPixel:
+    """Plt pixel
+
+    Attributes:
+        color
+        layer
+    """
+    pass
+
+
+class PltColors:
+    """Plt Color Array
+
+    Attributes:
+        colors
+
+    Notes:
+        This would be the colors that a player would select"""
+    pass
+
+
+class Plt:
+    """Implementation of PLT file format"""
+
+    def height(self):
+        pass
+
+    def pixels(self):
+        pass
+
+    def valid(self):
+        pass
+
+    def width(self):
+        pass
+
+
+def decode_plt_color(plt: Plt, colors, x: int, y: int) -> list[int]:
+    """Decodes PLT and user selected colors to RBGA
+    """
+    pass
+
+
 class TwoDA:
     """Implementation of 2da file format
 
